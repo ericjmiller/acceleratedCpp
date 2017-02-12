@@ -11,15 +11,15 @@ int main() {
 	cout << "Please enter your first name: ";
 	string name;
 	cin >> name;
-	cout << "Hello, " << name << "!" << endl;
+	cout << endl << "Hello, " << name << "!" << endl;
 
 	// ask for and read the midterm and final grades
-	cout << "Please enter your midterm and final exame grades: ";
+	cout << "Please enter your midterm and final exam grades: ";
 	double midterm, final;
 	cin >> midterm >> final;
 
 	// ask and read the homework grades
-	cout << "Enter all you homework grades, followed by end-of-file: ";
+	cout << endl << "Enter all you homework grades, followed by end-of-file: ";
 	vector<double> homework;
 	double x;
 	// invariant: homework contains all the homework grades read so far
@@ -44,7 +44,7 @@ int main() {
 
 	// compute and write the final grade
 	streamsize prec = cout.precision();
-	cout << "Your final grade is " << setprecision(3) << 0.2 * midterm + 0.4 * final + 0.4 * median << setprecision(prec) << endl;
+	cout << endl << "Your final grade is " << setprecision(3) << 0.2 * midterm + 0.4 * final + 0.4 * median << setprecision(prec) << endl;
 
 	return 0;
 }
