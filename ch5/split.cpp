@@ -31,8 +31,7 @@ vector<string> split(const string& s) {
 
     // if we found some nonwhitespace characters
     if (i != j) {
-      // copy from `s' starting at `i' and taking `j' `\-' `i' chars
-      ret.push_back(s.substr(i, j - i));
+      // copy from `s' starting at `i' and taking `j' `\-' `i' chars ret.push_back(s.substr(i, j - i));
       i = j;
     }
   }
